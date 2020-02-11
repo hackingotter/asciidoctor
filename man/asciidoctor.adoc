@@ -123,6 +123,9 @@ Similarly, if there is a subfolder in the resulting template directory that matc
 This option may be specified more than once.
 Matching templates found in subsequent directories override ones previously discovered.
 
+*-m, --sourcemap*::
+  Enable the sourcemap option. This allows converters and other extensions to access source locations.
+
 === Processing Information
 
 *--failure-level*=_LEVEL_::
