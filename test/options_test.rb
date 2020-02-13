@@ -282,8 +282,8 @@ context 'Options' do
     assert_equal false, options[:timings]
   end
 
-  test 'should enable sourcemap when -m flag is specified' do
-    options = Asciidoctor::Cli::Options.parse!(%w(-m test/fixtures/sample.adoc))
+  test 'should enable sourcemap when --sourcemap flag is specified' do
+    options = Asciidoctor::Cli::Options.parse!(%w(--sourcemap test/fixtures/sample.adoc))
     assert_equal true, options[:sourcemap]
   end
 

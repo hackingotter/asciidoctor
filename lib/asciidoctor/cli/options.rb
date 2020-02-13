@@ -138,7 +138,7 @@ module Asciidoctor
           opts.on('-t', '--timings', 'print timings report (default: false)') do |timing|
             self[:timings] = true
           end
-          opts.on('-m', '--sourcemap', 'generate source_location data in the AST. Usefull for extensions (default: false)') do |sourcemap|
+          opts.on('--sourcemap', 'generate source_location data in the AST. Usefull for extensions (default: false)') do |sourcemap|
             self[:sourcemap] = true
           end
           opts.on_tail('-h', '--help [TOPIC]', 'print a help message',
