@@ -138,7 +138,7 @@ module Asciidoctor
           opts.on('-t', '--timings', 'print timings report (default: false)') do |timing|
             self[:timings] = true
           end
-          opts.on('--sourcemap', 'generate source_location data in the AST. Usefull for extensions (default: false)') do |sourcemap|
+          opts.on('--sourcemap', 'keep track of the file and line number for each parsed block (default: false)') do |sourcemap|
             self[:sourcemap] = true
           end
           opts.on_tail('-h', '--help [TOPIC]', 'print a help message',
